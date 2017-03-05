@@ -11,6 +11,7 @@
 \usepackage{amssymb}
 \pagestyle{empty}
 \renewcommand{\baselinestretch}{1.0}
+\newcommand{\ffrac}[2]{\ensuremath{\frac{\displaystyle #1}{\displaystyle #2}}}
 
 \title{Statistics Project 1 : \\ Statistics - Math 2606}
 \author{Kevin Chen, William Gantt, Nick Barnes}
@@ -48,5 +49,12 @@ Our estimates for the standard deviation of the measurements, up to an order of 
 \sigma_{d_2} &= 1\text{m}
 \end{align*}
 
+To determine the impact of the error, we want to understand the change in the height of Searles with regard to a change in the distance from the mirror to the base of Searles, the mirror to Will, and the height of Will. We simply take the partial derivatives with respect to each quantity to understand how the height of Searles depends on these measurements. \\
+\begin{align*}
+    \frac{\partial}{\partial H_w} &= \frac{D_s}{D_w} \\
+	\frac{\partial}{\partial H_s} &= \frac{H_w}{D_w} \\
+	\frac{\partial}{\partial D_s} &= -D_w^{-2}D_sH_w = -\frac{D_sH_w}{D_w^2} \\
+\end{align*}
+Now we can calculate the values of these derivatives using an average value for $D_s, H_w, D_w$ and multiply these derivatives with their estimated standard deviations, respectively, and the largest value should be the error that has the greatest impact on our calculated height.
 
 \end{document}
