@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{fullpage}
 \usepackage{booktabs}
+\usepackage{pdfpages}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \pagestyle{empty}
@@ -19,7 +20,7 @@
 \begin{document}
 \maketitle
 \section{Experiment}
-The assignment was to estimate the height of Searles. Although it would have been ideal to estimate the height to the top of the spire, we did not do this. Instead, we measured to the point at the top of the front facade above the door. We believe there are a couple of advantages to doing so. First, measuring to the top of the spire requires that one estimate its horizontal distance from the mirror. 
+The assignment was to estimate the height of Searles. Although it would have been ideal to estimate the height to the top of the spire, we did not do this. Instead, we measured to the point at the top of the front facade above the door.
 
 For the purposes of the explanation of the experiment, let the $x$-axis be the imaginary line passing through the door, parallel to the walkway that passes in front of the building, and let the $y$-axis be the line passing through the door, perpendicular to the walkway. For all measurements, we maintained a constant distance from the $x$-axis. We chose this value to be the distance from the door to a point directly in front of it, at the far edge of the walkway, where the pavement meets the grass. Call this value $a$. To vary the distance from the door to the mirror, we marked out 10 positions at 2m-intervals along the line defined by $a$ that is parallel to the $x$-axis.
 \section{Results}
@@ -59,5 +60,9 @@ To determine the impact of the error, we want to understand the change in the he
 	\frac{\partial}{\partial D_s} &= -D_w^{-2}D_sH_w = -\frac{D_sH_w}{D_w^2} \\
 \end{align*}
 Now we can calculate the values of these derivatives using an average value for $D_s, H_w, D_w$ and multiply these derivatives with their estimated standard deviations, respectively, and the largest value should be the error that has the greatest impact on our calculated height.
+
+\includepdf[scale=0.8]{d1_h2.pdf}
+\includepdf[scale=0.8]{d2_h2.pdf}
+\includepdf[scale=0.8]{h1_h2.pdf}
 
 \end{document}
