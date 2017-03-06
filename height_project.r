@@ -14,6 +14,8 @@ plot(h1,h2,xlab="h1 (m)",
 	   main="Iris Height vs. Searles Height",
 	   pch=20
 )
+abline(16.665,0)
+abline(v=1.77)
 dev.off()
 
 pdf('d1_h2.pdf')
@@ -23,6 +25,8 @@ plot(d1,h2,
 	main="Distance from Will to Mirror vs. Searles Height",
 	pch=20
 )
+abline(16.665,0)
+abline(v=1.575)
 dev.off()
 
 pdf('d2_h2.pdf')
@@ -32,4 +36,6 @@ plot(d2,h2,
 	main="Distance from Mirror to Searles vs. Searles Height",
 	pch=20
 )
+abline(16.665,0)
+abline(v=14.839)
 dev.off()
